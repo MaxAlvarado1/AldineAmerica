@@ -1,0 +1,13 @@
+<div class="container-xxl" *ngIf="admin">
+    <!-- navbar -->
+    <app-navbar></app-navbar>
+</div>
+
+<div class="rout">
+    <router-outlet></router-outlet>
+</div>
+
+<div class="container-xxl" *ngIf="admin">
+    <!-- footer -->
+    <app-footer></app-footer>
+</div>

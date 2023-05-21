@@ -1,0 +1,25 @@
+* {
+    background-color: #e6efff;
+}
+
+.error {
+    background-color: #e6efff;
+    border-radius: 10px;
+}
+
+.error {
+    color: var(--primary-color);
+}
+
+.viewmorebtn {
+    text-decoration: none;
+    background-color: var(--secondary-color);
+    color: #e6efff;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.viewmorebtn:hover {
+    background-color: var(--primary-color);
+    color: #e6efff;
+}

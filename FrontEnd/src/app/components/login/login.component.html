@@ -1,0 +1,28 @@
+<div class="break container">
+    <div class="login container-xxl container p-5 text-center shadow">
+        <div class="container">
+            <form [formGroup]="loginForm" class="row g-2 align-items-center justify-content-center">
+                <div class="col-auto">
+                    <label for="inputPassword" class="col-form-label"><i class="bi bi-lock-fill"></i> Password:</label>
+                </div>
+                <div class="form-group col-auto">
+                    <div class="input-group">
+                        <input (keyup.enter)="onSubmit()" formControlName="password" [type]="type" id="inputPassword" class="form-control" required>
+                        <span (click)="hideShowPassword()" class="eye input-group-text"><i class="{{eyeIcon}}"></i></span>
+                    </div>
+                </div>
+                <small *ngIf="loginForm.controls['password'].dirty && loginForm.hasError('required','password')" class="text-danger">*enter password</small>
+                
+                <div class="form-inline mt-3">
+                    <a id="forget" href="" class="font-weight-bold">Forget Password?</a>
+                </div>
+
+                <div class="col-12 mt-4">
+                    <button (click)="onSubmit()" [disabled]="loginForm.invalid" type="submit" class="btn">Login</button>
+                </div>
+                <small *ngIf="incorrect" class="text-danger">*incorrect password</small>
+            </form>
+        </div>
+    </div>
+</div>
+

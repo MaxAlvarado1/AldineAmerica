@@ -1,0 +1,51 @@
+<div class="break p-1"></div>
+<div class="itemDetails container-xxl container my-5 p-5 text-center shadow">
+  <div id="carousel" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" *ngFor="let car of Images; let index = index; first as isFirst" data-bs-target="#carousel" [attr.data-bs-slide-to]="index" [ngClass]="isFirst ? 'active' : '' " [attr.aria-label]="index"></button>
+    </div>
+    <div class="carousel-inner border border-4 border-dark">
+      <ng-container *ngFor="let image of Images; let index = index; first as isFirst">
+      <div [ngClass]="isFirst ? 'carousel-item active' : 'carousel-item' ">
+        <div class="carousel-caption" *ngIf="carData[0].carPartType == 'Total Vehicle'">
+          <h5 class="mb-0">{{captions[index]}}</h5>
+        </div>
+        <img [src]="image">
+      </div>
+    </ng-container>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+  <div class="container">
+    <div class="carInfo row">
+      <div class="details col-md-12 border border-3 border-dark">
+        <h1 class="p-4">{{carData[0]?.carYear}} {{carData[0]?.carMake}} {{carData[0]?.carModel}}</h1>
+      </div>
+      <div class="details col-md-7 border border-3 border-dark">
+        <p>Part Name</p>
+        <h2>{{carData[0]?.carPartName}}</h2>
+      </div>
+      <div class="details col-md-5 border border-3 border-dark">
+        <p><i class="bi bi-camera"></i> Date</p>
+        <h2>{{carData[0]?.carImageDate}}</h2>
+      </div>
+      <div class="botDetails col-md-12 border border-4 border-dark">
+        <p class="">Description</p>
+        <h2 class="pb-4">{{carData[0]?.carDesc}}</h2>
+        <h2>Call Now! <a href="tel:2812600800"><i class="bi bi-telephone-fill"></i> (281) 260-0800</a></h2>
+        <p>Operation hours:</p>
+        <p class="pb-4">Monday-Saturday: 8:00AM - 6:00PM</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<div class="break p-1"></div>

@@ -1,0 +1,75 @@
+<div class="form-group row justify-content-center">
+    <div class="col-lg-4 mt-4">
+        <label class="form-label">Make</label>
+        <input type="text" class="form-control" [(ngModel)]="carMake" placeholder="Enter Make">
+    </div>
+    <div class="col-lg-4 mt-4">
+        <label class="form-label">Model</label>
+        <input type="text" class="form-control" [(ngModel)]="carModel" placeholder="Enter Model">
+    </div>
+    <div class="col-lg-4 mt-4">
+        <label class="form-label">Year</label>
+        <input type="number" class="form-control" *ngIf="carYear !=0" [(ngModel)]="carYear">
+        <input type="number" class="form-control" *ngIf="carYear ==0" [(ngModel)]="carYear">
+    </div>
+    <div class="col-lg-6 mt-4">
+        <label class="form-label">Type</label>
+        <select class="form-select" name="carType" [(ngModel)]="carPartType" #carType (change)="selectType(carType.value, partName)">
+            <option selected value="Total Vehicle">Total Vehicle</option>
+            <option value="Exterior Body (Front End)">Exterior Body (Front End)</option>
+            <option value="Exterior Body (Driver Side)">Exterior Body (Driver Side)</option>
+            <option value="Exterior Body (Passenger Side)">Exterior Body (Passenger Side)</option>
+            <option value="Exterior Body (Rear End)">Exterior Body (Rear End)</option>
+            <option value="Exterior Body (Roof)">Exterior Body (Roof)</option>
+            <option value="Bed">Bed</option>
+            <option value="Under Vehicle">Under Vehicle</option>
+            <option value="Glass">Glass</option>
+            <option value="Wheel">Wheel</option>
+            <option value="Suspension/Steering">Suspension/Steering</option>
+            <option value="Under Hood">Under Hood</option>
+            <option value="Engine">Engine</option>
+            <option value="Transmission">Transmission</option>
+            <option value="Interior (Front)">Interior (Front)</option>
+            <option value="Interior (Rear)">Interior (Rear)</option>
+            <option value="Interior (Trunk)">Interior (Trunk)</option>
+            <option value="Air Bags">Air Bags</option>
+            <option value="Wiring Harness/Electrical Components">Wiring Harness/Electrical Components</option>
+        </select>
+    </div>
+    <div class="col-lg-6 mt-4">
+        <label class="form-label">Part Name</label>
+        <input type="text" #partName id="partName" class="form-control" [(ngModel)]="carPartName" placeholder="Enter Part Name" [disabled]="carPartType != 'Total Vehicle' ? false: true">
+    </div>
+
+    <div class="col-lg-12 mt-4">
+        <div class="d-flex flex-row flex-nowrap overflow-x-auto">
+            <div class="card" style="width: 18rem;" *ngFor="let image of Images; let idx = index">
+                <img [src]="image" class="card-img-top" onerror="this.onerror = null; this.src='/assets/images/defaultImage.jpg'" alt="...">
+                <div class="card-body">
+                <h5 class="card-title" *ngIf="Images.length > 2">{{captions[idx]}}</h5>
+                <h5 class="card-title" *ngIf="Images.length <= 2">{{captions2[idx]}}</h5>
+                <label for="file-add{{idx}}" class="custom-file" *ngIf="image == ''">Add</label>
+                <input type="file" id="file-add{{idx}}" *ngIf="image == ''" (change)="uploadImage($event)">
+                <label for="file-update{{idx}}" class="custom-file" *ngIf="image != ''">Update</label>
+                <input type="file" class="" id="file-update{{idx}}" *ngIf="image != ''" (change)="uploadImage($event)">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 mt-4">
+        <label class="form-label">Description</label>
+        <textarea class="form-control" [(ngModel)]="carDesc" placeholder="Enter Description.&#10;Ex: Wrecked in passenger side. Complete Wheel set. 5.8L motor. 5ft bed. black color. Electrical power. No less than $120."></textarea>
+    </div>
+    <div class="col-12 my-4">
+        <input class="form-check-input" type="checkbox" value="" [(ngModel)]="spotlight" id="spotlight">
+        <label class="form-check-label ms-3" for="spotlight">Spotlight? (Show in Home page)</label>
+    </div>
+</div>
+<div *ngIf="invalid">
+    <p class="text-danger">Invalid. Please check all inputs.</p>
+</div>
+<div class="modal-footer">
+    <button type="submit" class="btn" *ngIf="ID ==0" (click)="addItem()">{{buttonText}}</button>
+    <button type="submit" class="btn" *ngIf="ID !=0" (click)="editItem()">{{buttonText}}</button>
+</div>

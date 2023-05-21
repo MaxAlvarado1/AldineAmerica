@@ -1,0 +1,67 @@
+.itemDetails {
+    background-color: #e6efff;
+    border-radius: 10px;
+}
+
+img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    background-color: black;
+}
+
+.carousel-inner {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+    background-color: rgb(0,0,0,.5);
+    color:#e6efff;
+    padding: 10px;
+    left: auto;
+}
+
+.carInfo h1 {
+    background-color: var(--primary-color);
+    color: #e6efff;
+    margin: 0;
+    padding: 10px;
+}
+
+.carInfo h2, p {
+    background-color: var(--primary-color);
+    color: #e6efff;
+    margin: 0;
+    padding: 10px;
+}
+
+.carInfo p {
+    padding-top: 10px;
+    font-size: 20px;
+    color: var(--secondary-color);
+}
+
+.details {
+    margin: 0;
+    padding: 0;
+}
+
+.botDetails {
+    margin: 0;
+    padding: 0;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+a {
+    display:inline-block;
+    color: #e6efff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}

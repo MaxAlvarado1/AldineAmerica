@@ -1,0 +1,20 @@
+* {
+    font-size: 16px;
+}
+
+.navbar-brand {
+    color: var(--primary-color);
+    font-size: 20px;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+    color: var(--secondary-color);
+}
+
+.navbar-expand-md .navbar-nav .nav-link.active-link {
+    color: var(--primary-color);
+}
+
+.navbar-expand-md .navbar-nav .nav-link:hover {
+    color: var(--primary-color);
+}

@@ -1,0 +1,54 @@
+<div class="content text-center">
+    <h1 class="mb-3">Houston's American Junkyard</h1>
+    <a routerLink="inventory">CHECK INVENTORY NOW <i class="bi bi-arrow-right"></i></a>
+</div>
+<div class="break p-1"></div>
+<div class="spotlight container-xxl container text-center my-5 py-5 shadow">
+    <h1>Check Our Cars!</h1>
+    <div class="row justify-content-center mx-5">
+        <ng-container *ngFor="let car of carData.reverse()">
+            <div class="carbox col-lg-3 col-md-6" *ngIf="car.spotlight">
+                <a [routerLink]="['/inventory', car.ID]">
+                    <img src="{{car.carImage1}}" />
+                    <h2>{{car.carYear}} {{car.carMake}} {{car.carModel}}</h2>
+                </a>
+            </div>
+        </ng-container>
+    </div>
+    <a routerLink="inventory" class="viewmorebtn mt-3">View More!</a>
+</div>
+<div class="about container-xxl container my-5 p-5 text-center shadow">
+    <p>Located in Houston, we strive to give our customers the best affordable recycled auto parts in the area. We carry late domestic models and provide excellent customer service. Even if we do not carry your specific part, we are connected with a vast group of junkyards in the area that we guarantee to help you find what you are looking for!</p>
+    <p>Come get your parts today!</p>
+    <p>Monday - Saturday:<span class="bold"> 8:00AM - 6:00PM</span></p>
+    <a href="http://maps.apple.com/?q=939+Aldine+Mail+Rte+Rd,+Houston,+TX+77037" target="_blank"><i class="bi bi-house-fill"></i> 939 Aldine Mail Rte Houston, TX 77037</a>
+    <p></p>
+    <a href="tel:2812600800"><i class="bi bi-telephone-fill"></i> (281) 260-0800</a>
+</div>
+<div class="services container-xxl container px-5 text-center">
+    <div class="row">
+        <div class="box col-lg-4 shadow">
+            <h2>FREE LOCAL DELIVERY<br><i class="bi bi-truck"></i></h2> 
+        </div>
+        <div class="box col-lg-4 shadow">
+            <h2>30 DAY WARRANTY<br><i class="bi bi-check2-square"></i></h2>  
+        </div>
+        <div class="box col-lg-4 shadow">
+            <h2>AFFORDABLE PRICES<br><i class="bi bi-cash-coin"></i></h2>   
+        </div>
+    </div>
+</div>
+<div class="brands container-xxl container my-5 p-5 text-center shadow">
+    <h2 class="mb-5">We carry serveral American-based automotive manufacturers such as</h2>
+    <img src="assets/images/pngfind.com-chevy-logo-png-2972976.png" height="65">
+    <img src="assets/images/PngItem_1666734.png" height="58">
+    <img src="assets/images/28457-6-ford-logo-file.png" height="61">
+    <img src="assets/images/pngfind.com-dodge-logo-png-109459.png" height="55">
+    <img src="assets/images/PngItem_1486263.png" height="60">
+    <img src="assets/images/pngfind.com-chrysler-logo-png-6859289.png" height="62">
+    <img src="assets/images/pngfind.com-jeep-grill-logo-png-6828397.png" height="61">
+    <img src="assets/images/pngfind.com-lincoln-png-896421.png" height="65">
+    <img src="assets/images/pngaaa.com-755456.png" height="65">
+    <h2 class="mt-5">And more !</h2>
+</div>
+<div class="break p-1"></div>

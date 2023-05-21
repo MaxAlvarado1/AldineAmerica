@@ -1,0 +1,41 @@
+.login {
+    background-color: #e6efff;
+    border-radius: 10px;
+}
+
+.break {
+    padding: 50px;
+    height: 100vh;
+}
+
+label {
+    color: var(--primary-color)
+}
+
+.eye {
+    background-color: white;
+}
+
+.eye:hover {
+    cursor: pointer;
+}
+
+#forget {
+    text-decoration: none;
+    color: var(--secondary-color)
+}
+
+#forget:hover {
+    color: var(--primary-color)
+}
+
+button {
+    background-color: var(--secondary-color);
+    color: #e6efff;
+    padding: 8px 15px;
+}
+
+button:hover {
+    background-color: var(--primary-color);
+    color: #e6efff;
+}

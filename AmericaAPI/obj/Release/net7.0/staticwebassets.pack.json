@@ -1,0 +1,181 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\3rdpartylicenses.txt",
+      "PackagePath": "staticwebassets\\3rdpartylicenses.txt"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\28457-6-ford-logo-file.png",
+      "PackagePath": "staticwebassets\\assets\\images\\28457-6-ford-logo-file.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\53.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\53.jpg"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\PngItem_1486263.png",
+      "PackagePath": "staticwebassets\\assets\\images\\PngItem_1486263.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\PngItem_1666734.png",
+      "PackagePath": "staticwebassets\\assets\\images\\PngItem_1666734.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\assignment DIDC.pdf",
+      "PackagePath": "staticwebassets\\assets\\images\\assignment DIDC.pdf"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\bed.jpeg",
+      "PackagePath": "staticwebassets\\assets\\images\\bed.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\bed2.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\bed2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\buick.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\buick.webp"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\cad.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\cad.webp"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\chry.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\chry.webp"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\defaultImage.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\defaultImage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\download (1).jfif",
+      "PackagePath": "staticwebassets\\assets\\images\\download (1).jfif"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\download.jfif",
+      "PackagePath": "staticwebassets\\assets\\images\\download.jfif"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\example1.png",
+      "PackagePath": "staticwebassets\\assets\\images\\example1.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\jeep.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\jeep.jpg"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\motorBanner.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\motorBanner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\pngaaa.com-755456.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pngaaa.com-755456.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\pngfind.com-chevy-logo-png-2972976.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pngfind.com-chevy-logo-png-2972976.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\pngfind.com-chrysler-logo-png-6859289.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pngfind.com-chrysler-logo-png-6859289.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\pngfind.com-dodge-logo-png-109459.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pngfind.com-dodge-logo-png-109459.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\pngfind.com-jeep-grill-logo-png-6828397.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pngfind.com-jeep-grill-logo-png-6828397.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\pngfind.com-lincoln-png-896421.png",
+      "PackagePath": "staticwebassets\\assets\\images\\pngfind.com-lincoln-png-896421.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\ram.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\ram.webp"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\s-l1600.jpg",
+      "PackagePath": "staticwebassets\\assets\\images\\s-l1600.jpg"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\testImage.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testImage.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\testImage10.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testImage10.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\testImage2.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testImage2.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\testImage3.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testImage3.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\testImage4.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testImage4.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\testImage5.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testImage5.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\testImage6.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testImage6.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\testImage7.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testImage7.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\testImage8.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testImage8.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\assets\\images\\testImage9.png",
+      "PackagePath": "staticwebassets\\assets\\images\\testImage9.png"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\main.11ddb6e3712328b8.js",
+      "PackagePath": "staticwebassets\\main.11ddb6e3712328b8.js"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\polyfills.394e469176194672.js",
+      "PackagePath": "staticwebassets\\polyfills.394e469176194672.js"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\runtime.f45c5af40b9bda80.js",
+      "PackagePath": "staticwebassets\\runtime.f45c5af40b9bda80.js"
+    },
+    {
+      "Id": "C:\\Users\\maxim\\Desktop\\NewASPNET\\America\\AmericaAPI\\wwwroot\\styles.69ab726db5890c70.css",
+      "PackagePath": "staticwebassets\\styles.69ab726db5890c70.css"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.AmericaAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.build.AmericaAPI.props",
+      "PackagePath": "build\\AmericaAPI.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.AmericaAPI.props",
+      "PackagePath": "buildMultiTargeting\\AmericaAPI.props"
+    },
+    {
+      "Id": "obj\\Release\\net7.0\\staticwebassets\\msbuild.buildTransitive.AmericaAPI.props",
+      "PackagePath": "buildTransitive\\AmericaAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,30 @@
+* {
+    background-color: #e6efff;
+}
+
+.contact {
+    background-color: #e6efff;
+    border-radius: 10px;
+}
+
+.contact {
+    color: var(--primary-color);
+}
+
+a {
+    display:inline-block;
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+i {
+    color: black;
+}
+
+agm-map {
+    height: 200px;
+}

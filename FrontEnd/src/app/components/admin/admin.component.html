@@ -1,0 +1,114 @@
+<div class="break container">
+    <div class="admin container-xxl container p-5 text-center shadow">
+        <div class="row mb-3 justify-content-center">
+            <div class="col-md-3 mb-3">
+                <label for="make" class="form-label">Make</label>
+                <select class="form-select" id="make" (change)="makeSelection($event)">
+                    <option selected value="All">All</option>
+                    <option *ngFor="let make of makes" [value]="make">{{make}}</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <label for="model" class="form-label">Model</label>
+                <select class="form-select" id="model" (change)="modelSelection($event)">
+                    <option selected value="All">All</option>
+                    <option *ngFor="let model of selectedModels[0]" [value]="model">{{model}}</option>
+                </select>
+            </div>
+            <div class="col-md-2 mb-3">
+                <label for="year" class="form-label">Year</label>
+                <select class="form-select" id="year">
+                    <option selected value="All">All</option>
+                    <option *ngFor="let year of selectedYears[0]" [value]="year">{{year}}</option>
+                </select>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="partType" class="form-label">Part Type</label>
+                <select class="form-select" id="partType">
+                    <option selected value="All">All</option>
+                    <option value="Total Vehicle">Total Vehicle</option>
+                    <option value="Exterior Body (Front End)">Exterior Body (Front End)</option>
+                    <option value="Exterior Body (Driver Side)">Exterior Body (Driver Side)</option>
+                    <option value="Exterior Body (Passenger Side)">Exterior Body (Passenger Side)</option>
+                    <option value="Exterior Body (Rear End)">Exterior Body (Rear End)</option>
+                    <option value="Exterior Body (Roof)">Exterior Body (Roof)</option>
+                    <option value="Bed">Bed</option>
+                    <option value="Under Vehicle">Under Vehicle</option>
+                    <option value="Glass">Glass</option>
+                    <option value="Wheel">Wheel</option>
+                    <option value="Suspension/Steering">Suspension/Steering</option>
+                    <option value="Under Hood">Under Hood</option>
+                    <option value="Engine">Engine</option>
+                    <option value="Transmission">Transmission</option>
+                    <option value="Interior (Front)">Interior (Front)</option>
+                    <option value="Interior (Rear)">Interior (Rear)</option>
+                    <option value="Interior (Trunk)">Interior (Trunk)</option>
+                    <option value="Air Bags">Air Bags</option>
+                    <option value="Wiring Harness/Electrical Components">Wiring Harness/Electrical Components</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn" (click)="search($event)">Search</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-3 col-md-6">
+                <div class="carbox">
+                    <button class="btn2" type="button" data-bs-toggle="modal" data-bs-target="#Modal" (click)="addClick()">
+                        <div class="add row">
+                            <h1 class="col-lg-12"><i class="bi bi-plus-square-fill"></i><br>Add New Item</h1>
+                        </div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="modal fade" id="Modal" tabindex="-1" data-bs-backdrop="static" data-keyboard="false">
+                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5">{{ModalTitle}}</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="closeClick()" #close></button>
+                    </div>
+                    <div class="modal-body">
+                        <app-admin-add-edit-items [item]="item" *ngIf="ActivateAddEditItem"></app-admin-add-edit-items>
+                        <button type="submit" class="btn" (click)="deleteClick(item, close)" *ngIf="ModalTitle != 'Add New Item'">DELETE ITEM <i class="bi bi-trash-fill"></i></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div class="col-xl-3 col-md-6" *ngFor="let car of carData.reverse() | paginate:{
+                itemsPerPage: itemSize,
+                currentPage: page,
+                totalItems: count}; let i = index">
+                <div class="carbox">
+                    <button class="btn2" type="button" data-bs-toggle="modal" data-bs-target="#Modal" (click)="editClick(car)">
+                        <img src="{{car.carImage1}}"/>
+                        <div class="carInfo row">
+                            <div class="col-lg-12 border border-dark">
+                                <h2>{{car.carYear}} {{car.carMake}} {{car.carModel}}</h2>
+                            </div>
+                            <div class="botInfo col-lg-7 border border-dark">
+                                <p id="redc">Part Name :</p>
+                                <p>{{car.carPartName}}</p>
+                            </div>
+                            <div class="botInfo col-lg-5 border border-dark">
+                                <p id="redc"><i class="bi bi-camera"></i> Date :</p>
+                                <p id="date">{{car.carImageDate}}</p>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="mt-3">
+            <pagination-controls
+                previousLabel="Prev"
+                nextLabel="Next"
+                (pageChange)="onTableDataChange($event)"
+                [autoHide]="true"
+            >
+            </pagination-controls>
+        </div>
+    </div>
+</div>
